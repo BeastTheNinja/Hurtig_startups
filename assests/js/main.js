@@ -32,28 +32,28 @@ function register() {
     function validateFirstName() {
         const firstName = document.getElementById('firstname').value;
         if (firstName.length < 2) {
-            alert('Fornavn skal være mindst 2 karakterer');
+            // alert('Fornavn skal være mindst 2 karakterer');
         }
     }
 
     function validateLastName() {
         const lastName = document.getElementById('lastname').value;
         if (lastName.length < 2) {
-            alert('Efternavn skal være mindst 2 karakterer');
+            // alert('Efternavn skal være mindst 2 karakterer');
         }
     }
 
     function validateAddress() {
         const address = document.getElementById('address').value;
         if (address.length < 5) {
-            alert('Adresse skal være mindst 5 karakterer');
+            // alert('Adresse skal være mindst 5 karakterer');
         }
     }
 
     function validateZipcode() {
         const zipcode = document.getElementById('zipcode').value;
         if (!/^\d+$/.test(zipcode)) {
-            alert('Postnummer skal kun indeholde tal');
+            // alert('Postnummer skal kun indeholde tal');
         }
     }
 
@@ -61,7 +61,7 @@ function register() {
         const email = document.getElementById('email').value;
         const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!pattern.test(email)) {
-            alert('Indtast en gyldig emailadresse');
+            // alert('Indtast en gyldig emailadresse');
         }
     }
 
