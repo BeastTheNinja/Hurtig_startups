@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* COLOR SCHEME */
+:root{
+    --mainHeader: #aa506c;
+    --sectionOne: #668979;
+    --Cards:        #657b99;
+    --backgroundcolr: #eaeaea;
+    --text:             #444444;
+}
+/* #region GLOBAL STYLES */
+body{
+ font-family: 'Manrope';
+ font-weight: 200;
+}
+h1,h2{
+    font-family: 'Manrope';
+    font-weight: 400;
+}
+/* #endregion */
+/* #region MEDIA QUARIES */
+/* DESKTOP */
+@media (min-width: 1300px){
+
+}
+@media (max-width: 700px){
+
+}
+/* #endregion */
