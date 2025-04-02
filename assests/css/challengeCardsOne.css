@@ -4,25 +4,71 @@
     --mainHeader: #aa506c;
     --sectionOne: #668979;
     --Cards:        #657b99;
-    --backgroundcolr: #eaeaea;
+    --bgc: #eaeaea;
     --text:             #444444;
 }
 /* #region GLOBAL STYLES */
 body{
- font-family: 'Manrope';
- font-weight: 200;
+    background-color: var(--bgc);
+    font-family: 'Manrope';
+    font-weight: 200;
 }
 h1,h2,h3{
+    color: white;
     font-family: 'Manrope';
     font-weight: 400;
 }
+h1{
+    font-size: 100px;
+}
 /* #endregion */
+/* #region MAIN HEADER  */
+.main-header{
+    background-color: var(--mainHeader);
+    padding: 0.3rem;
+    margin: 0;
+    padding-top: 0;
+}
+.main-header > h2{
+    font-weight: 200px;
+    font-size: 47px;
+}
+/* #endregion */
+/* #region SECTION ONE  */
+.sectionOne >  header{
+    background-color: var(--sectionOne);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.sectionOne > div{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+}
+.sectionOne > div > figure > header{
+    background-color: var(--Cards);
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.sectionOne > div > figcaption{
+    color: var(--text);
+}
+/* #endreigon */
+
 /* #region MEDIA QUARIES */
 /* DESKTOP */
 @media (min-width: 1300px){
-
+    .sectionOne > div{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
 }
+/* MOBILE  */
 @media (max-width: 700px){
-
+    .sectionOne > div{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 1rem;
+    }
 }
 /* #endregion */
