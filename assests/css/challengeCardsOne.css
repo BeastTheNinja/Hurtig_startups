@@ -58,12 +58,16 @@ figure{
 .sectionOne > div > figcaption{
     color: var(--text);
 }
+/* #endregion */
+/* #region FOOTER  */
 .linkMe{
     display: flex;
     justify-content: end;
 }
-/* #endreigon */
-
+.linkMe{
+    background-color: var(--sectionOne);
+}
+/* #endregion */
 /* #region MEDIA QUARIES */
 /* DESKTOP */
 @media (min-width: 1300px){
